@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Blurry",
+  "description": "Highlight all blurry images",
+  "version": "0.1",
+
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+  "browser_action": {
+    // "default_icon": "icon.png",
+    "default_title": "Chrome Extension test",
+    "default_popup": "index.html"
+  },
+  "devtools_page": "index.html"
+}
